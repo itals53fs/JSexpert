@@ -1,0 +1,29 @@
+{
+  "name": "08-multi-bd",
+  "version": "1.0.0",
+  "description": "Depois do docker instalado para instalar a imagem do postgres docker run \\     --name postgres \\     -e POSTGRES_USER=talesfelix \\     -e POSTGRES_PASSWORD=minhasenhasecreta \\     -e POSTGRES_DB=heroes \\     -p 5432:5432 \\     -d \\     postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/tests/*.test.js",
+    "testM": "mocha src/tests/mongoStrategy.test.js",
+    "testAPI": "mocha src/tests/apiHero.test.js",
+    "startM": "sh startMongo.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "hapi": "^18.1.0",
+    "hapi-swagger": "^14.1.3",
+    "inert": "^5.1.3",
+    "joi": "^17.4.0",
+    "mongoose": "^5.12.11",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2",
+    "vision": "^5.4.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.4.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "08-multi-bd",
+  "version": "1.0.0",
+  "description": "Depois do docker instalado para instalar a imagem do postgres docker run \\     --name postgres \\     -e POSTGRES_USER=talesfelix \\     -e POSTGRES_PASSWORD=minhasenhasecreta \\     -e POSTGRES_DB=heroes \\     -p 5432:5432 \\     -d \\     postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
